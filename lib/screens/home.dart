@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mongo_dart/mongo_dart.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage ({super.key});
@@ -29,13 +30,14 @@ class FirstPage extends StatelessWidget {
                       const SnackBar(content: Text("Checking And Triel of Alert Buttion"),));
                 },
             )],
-      backgroundColor: Colors.red[400],
+      backgroundColor: Colors.blue[300],
       ),
-      body: const Center(child: Text("Speed And Fast Way To Find a Best Ride",
+      body: SingleChildScrollView(
+        child: Text("Speed And Fast Way To Find a Best Ride",
         style: TextStyle(fontSize: 18,color: Colors.grey,fontWeight: FontWeight.bold),
       ),
       ),
-
+      backgroundColor: Colors.black,
     );
   }
 }

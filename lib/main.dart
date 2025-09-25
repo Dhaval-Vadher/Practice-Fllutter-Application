@@ -1,3 +1,4 @@
+import 'package:demo/screens/SplashScreen/AnimatedSplash.dart';
 import 'package:demo/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: FirstPage()
+      home: AnimatedSplash()
     );
   }
 }
